@@ -17,5 +17,28 @@
   </dependencies>
   <build>
     <finalName>web-app</finalName>
-  </build>
+  </build> <distributionManagement>
+
+  <repository>
+
+     <id>deployment</id>
+
+     <name>Internal Releases</name>
+
+     <url>http://192.168.188.128:8070/nexus-2.11.4-01/content/repositories/releases/</url>
+
+  </repository>
+
+  <snapshotRepository>
+
+     <id>deployment</id>
+
+     <name>Internal Releases</name>
+
+     <url>http://192.168.188.128:8070/nexus-2.11.4-01/content/repositories/snapshots/</url>
+
+  </snapshotRepository>
+
+</distributionManagement>
+  
 </project>
